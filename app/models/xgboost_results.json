@@ -1,0 +1,24 @@
+{
+  "model": "XGBoost",
+  "n_estimators": 496,
+  "auroc_val": 0.9008,
+  "auroc_test": 0.9066,
+  "auprc_test": 0.9157,
+  "accuracy": 0.8259,
+  "n_features": 61,
+  "train_rows": 3805715,
+  "val_rows": 821839,
+  "test_rows": 806012,
+  "top_features": [
+    "sofa_neuro",
+    "sofa_neuro_mean_6h",
+    "hours_from_admission",
+    "sofa_neuro_max_12h",
+    "sofa_cardio_max_12h",
+    "sofa_resp_max_12h",
+    "bilirubin",
+    "sofa_resp_mean_12h",
+    "resp_rate_mean_12h",
+    "sofa_cardio_mean_12h"
+  ]
+}

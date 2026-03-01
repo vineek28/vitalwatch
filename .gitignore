@@ -1,0 +1,67 @@
+# ══════════════════════════════════════════════════════════════════════════════
+#  VitalWatch — .gitignore
+# ══════════════════════════════════════════════════════════════════════════════
+
+# ── Raw & Processed Data (MIMIC-IV — too large + license restricted) ─────────
+data/Raw/
+data/Processed/
+data/raw/
+data/processed/
+*.csv.gz
+*.parquet
+
+# ── Model Weights (too large for GitHub) ─────────────────────────────────────
+*.pt
+*.pth
+*.joblib
+*.pkl
+*.h5
+*.onnx
+!models/README.md
+
+# ── Checkpoints & Training Artifacts ─────────────────────────────────────────
+checkpoints/
+runs/
+wandb/
+mlruns/
+*.ckpt
+
+# ── Environment & Secrets ────────────────────────────────────────────────────
+.env
+.env.*
+*.key
+*.pem
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+venv/
+.venv/
+env/
+
+# ── Jupyter ──────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── OS Files ─────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+
+# ── IDE ──────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.code-workspace
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/

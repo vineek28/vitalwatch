@@ -1,0 +1,9 @@
+{
+  "model": "TECO",
+  "seq_length": 168,
+  "batch_size": 512,
+  "best_epoch": 26,
+  "auroc_val": 0.9145,
+  "auroc_test": 0.9206,
+  "auprc_test": 0.8208
+}

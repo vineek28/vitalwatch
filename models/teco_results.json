@@ -1,0 +1,7 @@
+{
+  "model": "TECO",
+  "best_epoch": 28,
+  "auroc_val": 0.8964,
+  "auroc_test": 0.9063,
+  "auprc_test": 0.7933
+}

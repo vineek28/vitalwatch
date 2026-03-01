@@ -1,0 +1,7 @@
+{
+  "model": "LSTM",
+  "best_epoch": 21,
+  "auroc_val": 0.8793,
+  "auroc_test": 0.8913,
+  "auprc_test": 0.7205
+}
