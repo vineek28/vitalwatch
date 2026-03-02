@@ -30,29 +30,29 @@
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    VitalWatch Pipeline                    │
+│                    VitalWatch Pipeline                  │
 ├─────────────────────────────────────────────────────────┤
-│                                                          │
-│  📂 Data Ingestion (CSV · JSON · HL7 v2 · FHIR R4)      │
-│       ↓                                                  │
-│  🔧 Universal Parser → Column Normalisation              │
-│       ↓                                                  │
-│  ⚕️  SOFA Score Computation (6 organ systems)             │
-│       ↓                                                  │
-│  ┌──────────┐  ┌──────────┐  ┌──────────────────┐       │
-│  │ XGBoost  │  │   LSTM   │  │ TECO (Primary)   │       │
-│  │ (confirm)│  │ (compare)│  │ TCN + Attention   │       │
-│  └────┬─────┘  └──────────┘  └────────┬─────────┘       │
-│       ↓                               ↓                  │
-│  SHAP Explainability          Risk Prediction             │
-│       ↓                               ↓                  │
-│  ┌─────────────────────────────────────────────┐         │
-│  │         AI Clinical Narrative Agent          │         │
-│  │         (Claude API Integration)             │         │
-│  └─────────────────────────────────────────────┘         │
-│       ↓                                                  │
-│  🖥️  Streamlit Clinical Dashboard                        │
-│                                                          │
+                                                         
+  📂 Data Ingestion (CSV · JSON · HL7 v2 · FHIR R4)     
+       ↓                                                 
+  🔧 Universal Parser → Column Normalisation             
+       ↓                                                 
+  ⚕️  SOFA Score Computation (6 organ systems)           
+       ↓                                                  
+   ┌──────────┐  ┌──────────┐  ┌──────────────────┐      
+   │ XGBoost  │  │   LSTM   │  │ TECO (Primary)   │       
+   │ (confirm)│  │ (compare)│  │ TCN + Attention   │       
+   └────┬─────┘  └──────────┘  └────────┬─────────┘      
+        ↓                               ↓                  
+   SHAP Explainability          Risk Prediction             
+        ↓                               ↓                  
+   ┌─────────────────────────────────────────────┐         
+   │         AI Clinical Narrative Agent          │         
+   │         (Claude API Integration)             │         
+   └─────────────────────────────────────────────┘         
+        ↓                                                  
+   🖥️  Streamlit Clinical Dashboard                        
+                                                           
 └─────────────────────────────────────────────────────────┘
 ```
 
